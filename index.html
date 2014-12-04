@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myapp">
 
 <head>
 
@@ -24,6 +24,10 @@
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,10 +73,10 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#">Sign Up</a>
+                        <a class="btn" href="signup.html">Sign Up</a>
                     </li>
                     <li>
-                        <a href="#">Login</a>
+                        <a class="btn" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -80,6 +84,10 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <div id="appPage" ng-controller="AppCtrl">
+        <div ng-view></div>
+    </div>
 
     <!-- Header -->
     <header>
@@ -165,7 +173,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Term Two</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4 class="subheading">Adventurous Explorations</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -179,7 +187,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Term Three</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4 class="subheading">The Best is Yet to Come</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -193,7 +201,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Term Four</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4 class="subheading">^Ditto</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -292,7 +300,7 @@
         </div>
     </section>
 
-    <!-- Clients Aside -->
+    <!-- Clients Aside
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -318,7 +326,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
 
     <section id="contact">
         <div class="container">
